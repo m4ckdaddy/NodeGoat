@@ -2,9 +2,9 @@
 
 name: Policy scan Issue importer (assumes build)
 
-on: [push, pull_request, workflow_dispatch]
- #on: gollum          # sort of a dummy to prevent this from running
-
+# on: [push, pull_request, workflow_dispatch]
+#  #on: gollum          # sort of a dummy to prevent this from running
+on: push
 jobs:
   get-policy-flaws:
     runs-on: ubuntu-latest
