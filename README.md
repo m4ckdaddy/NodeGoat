@@ -1,7 +1,7 @@
 
 
 Being lightweight, fast, and scalable, Node.js is becoming a widely adopted platform for developing web applications. This project provides an environment to learn how OWASP Top 10 security risks apply to web applications developed using Node.js and how to effectively address them.
-
+g
 ## Getting Started
 OWASP Top 10 for Node.js web applications:
    
@@ -17,7 +17,7 @@ The database comes pre-populated with these user accounts created as part of the
 * New users can also be added using the sign-up page.
 
 ## How to Set Up Your Copy of NodeGoat
-
+bvb
 ### OPTION 1 - Run NodeGoat on your machine
 
 1) Install [Node.js](http://nodejs.org/) - NodeGoat requires Node v8 or above
