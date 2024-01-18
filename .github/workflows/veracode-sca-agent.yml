@@ -45,7 +45,8 @@ jobs:
            export SRCCLR_SCM_URL="https://github.acme.io"
            export SRCCLR_PR_ON="LOW"
            export SRCCLR_ENABLE_PR="true"
-        
+           export SRCCLR_APIURL="https://api.sourceclear.io"
+           export apiUrl="https://api.sourceclear.io"
            export SRCCLR_API_TOKEN='${{ secrets.SRCCLR_API_TOKEN }}'
            echo "${{ github.repository }} | cut -d'/' -f2" >> $env.APPLICATION_NAME
            echo ${{ env.APPLICATION_NAME }}
