@@ -42,7 +42,7 @@ jobs:
       run: |
            export SRCCLR_SCM_TYPE="GITHUB"
            export SRCCLR_SCM_TOKEN='${{ secrets.GITHUB_TOKEN }}'
-           export SRCCLR_SCM_URL="https://github.acme.io"
+           export SRCCLR_SCM_URL='${{ secrets.SRCCLR_SCM_URL }}'
            export SRCCLR_PR_ON="LOW"
            export SRCCLR_ENABLE_PR="true"
         
