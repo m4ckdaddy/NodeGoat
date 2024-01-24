@@ -4,11 +4,11 @@
 name: Node.js Veracode SCA Agent Scan
 
 on:
-  workflow_dispatch:
+ #workflow_dispatch:
   push:
-    branches: [ master ]
-  pull_request:
-    branches: [ master ]
+#    branches: [ master ]
+#  pull_request:
+#    branches: [ master ]
 
 jobs:
   build_and_scan:
