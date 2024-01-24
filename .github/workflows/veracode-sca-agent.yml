@@ -42,7 +42,7 @@ jobs:
       run: |
            export SRCCLR_SCM_TYPE="GITHUB"
            export SRCCLR_SCM_TOKEN='${{ secrets.GITHUB_TOKEN }}'
-           export SRCCLR_SCM_URL="https://github.com/veracode-jmok/nodegoat"
+           export SRCCLR_SCM_URL="https://github.com/veracode-jmok/nodegoat/tree/master"
            export SRCCLR_PR_ON="LOW"
            export SRCCLR_ENABLE_PR="true"
            export SRCCLR_API_URL="https://api.sourceclear.io"
