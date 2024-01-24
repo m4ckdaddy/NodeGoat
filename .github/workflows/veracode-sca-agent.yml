@@ -42,6 +42,9 @@ jobs:
            export SRCCLR_PR_ON="LOW"
            export SRCCLR_ENABLE_PR="true"
            export SRCCLR_API_URL="https://api.sourceclear.io"
+           git config --global user.email "jmok@veracode.com"
+           git config --global user.name "m4ckdaddy"
+
            export apiUrl="https://api.sourceclear.io"
            export SRCCLR_API_TOKEN='${{ secrets.SRCCLR_API_TOKEN }}'
            echo "${{ github.repository }} | cut -d'/' -f2" >> $env.APPLICATION_NAME
