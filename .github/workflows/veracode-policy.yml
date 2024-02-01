@@ -1,8 +1,8 @@
 name: Node.js Veracode Upload & Scan
 
 on:
-  workflow_dispatch:
-  #push:
+ # workflow_dispatch:
+  push:
   #  branches: [ master ]
   #pull_request:
   #  branches: [ master ]
