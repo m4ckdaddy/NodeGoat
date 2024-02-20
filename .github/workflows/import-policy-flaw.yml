@@ -2,7 +2,7 @@
 
 name: Policy scan Issue importer (assumes build)
 
-on: [push, pull_request, workflow_dispatch]
+on: # [push, pull_request, workflow_dispatch]
  #on: gollum          # sort of a dummy to prevent this from running
 
 jobs:
