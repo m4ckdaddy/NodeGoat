@@ -7,7 +7,7 @@ name: Policy scan Issue importer (assumes build)
 on: push
 jobs:
   get-policy-flaws:
-    runs-on: maven-latest
+    runs-on: maven-latest 
     container: 
       image: veracode/api-signing:latest
     steps:
