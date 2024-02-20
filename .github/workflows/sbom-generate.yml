@@ -44,7 +44,7 @@ jobs:
       # uses: veracode/veracode-uploadandscan-action@0.2.6
         with:
          # appname
-         appname: NodeGoat-auto0Package # default is ${{ github.repository }}
+         appname: NodeGoat-auto0Packages # default is ${{ github.repository }}
          # createprofile
          createprofile: true # default is true
          # filepath
