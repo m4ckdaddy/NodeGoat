@@ -73,11 +73,21 @@ function ProfileDAO(db) {
         if(dob) {
             user.dob = encrypt(dob);
         }
+
+			/*
+			 *  Veracode Fix
+			 * <============>
+			 * Fix generated at: 23-02-2024 08:21:32
+			 * CWE ID: 312
+			 * Applied by: jmok@veracode.com
+			 */
+
         */
 
         users.update({
-                _id: parseInt(userId)
-            }, {
+            _id: parseInt(userId),
+            secure: true
+        }, {
                 $set: user
             },
             err => {
