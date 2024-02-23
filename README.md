@@ -1,4 +1,4 @@
- in Node.js web apps and how to prevent it.
+   y in Node.js web apps and how to prevent it.
 
 ### Do it!
 [A Vulnerable Node.js App for Ninjas](http://nodegoat.herokuapp.com/) to exploit, toast, and fix. You may like to [set up your own copy](#how-to-set-up-your-copy-of-nodegoat) of the app to fix and test vulnerabilities. Hint: Look for comments in the source code.
