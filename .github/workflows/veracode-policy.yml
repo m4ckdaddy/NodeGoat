@@ -2,9 +2,9 @@ name: Node.js Veracode Upload & Scan
 
 on:
  # workflow_dispatch:
- # push:
+  push:
   #  branches: [ master ]
-  #pull_request:
+  pull_request:
   #  branches: [ master ]
 
 jobs:
@@ -53,18 +53,20 @@ jobs:
       uses: veracode/veracode-uploadandscan-action@0.2.1
       with:
         # appname
-        # appname: # default is ${{ github.repository }}
+        appname: '${{ github.repository }}'
         # createprofile
-        # createprofile: # default is true
+        createprofile: true # default is true
         # filepath
         filepath: release.zip
         # version
-        # version: # default is Scan from Github job: ${{ github.run_id }}
+        version:  '${{ github.run_id }}'  # default is Scan from Github job: ${{ github.run_id }}
         # vid
         vid: '${{ secrets.VERACODE_API_ID }}'
         # vkey
         vkey: '${{ secrets.VERACODE_API_KEY }}'
         # true or flase
-        createsandbox: true # optional
+        deleteincompletescan: 1
+       # createsandbox: true # optional
+        
         # name of the sandbox
-        sandboxname: Github # optional
+        #sandboxname: Github # optional
