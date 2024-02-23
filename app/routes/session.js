@@ -56,10 +56,20 @@ function SessionHandler(db) {
         userDAO.validateLogin(userName, password, (err, user) => {
             const errorMessage = "Invalid username and/or password";
             const invalidUserNameErrorMessage = "Invalid username";
+
+			/*
+			 *  Veracode Fix
+			 * <============>
+			 * Fix generated at: 23-02-2024 08:36:01
+			 * CWE ID: 117
+			 * Applied by: jmok@veracode.com
+			 */
+
             const invalidPasswordErrorMessage = "Invalid password";
             if (err) {
                 if (err.noSuchUser) {
-                    console.log('Error: attempt to login with invalid user: ', userName);
+                    const escapedUserName = userName.replace(/[\n]/g, '\\n').replace(/[\r]/g, '\\r');
+                    console.log('Error: attempt to login with invalid user: ', escapedUserName);
 
                     // Fix for A1 - 3 Log Injection - encode/sanitize input for CRLF Injection
                     // that could result in log forging:

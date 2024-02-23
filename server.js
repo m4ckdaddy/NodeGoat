@@ -72,9 +72,19 @@ MongoClient.connect(db, (err, db) => {
     app.use(bodyParser.urlencoded({
         // Mandatory in Express v4
         extended: false
+
+			/*
+			 *  Veracode Fix
+			 * <============>
+			 * Fix generated at: 23-02-2024 08:43:50
+			 * CWE ID: 614
+			 * Applied by: jmok@veracode.com
+			 */
+
     }));
 
     // Enable session management using express middleware
+    session.cookie  = Object.assign(session.cookie?? {}, {httpOnly: true, secure: true});
     app.use(session({
         // genid: (req) => {
         //    return genuuid() // use UUIDs for session IDs
